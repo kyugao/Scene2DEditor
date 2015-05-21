@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'sample.Main'
+    }
+}
+
+mainClassName = 'sample.Main'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
