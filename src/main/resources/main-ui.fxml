@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<BorderPane id="BorderPane" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="false" opacity="1.0" pickOnBounds="true" prefHeight="497.0" prefWidth="645.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<BorderPane id="BorderPane" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="false" opacity="1.0" pickOnBounds="true" prefHeight="497.0" prefWidth="645.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
   <center>
     <TabPane id="workingarea" fx:id="workingArea" prefHeight="200.0" prefWidth="200.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
       <tabs>
@@ -35,11 +35,11 @@
                   <children>
                     <ToolBar>
                       <items>
-                        <Button mnemonicParsing="false" prefWidth="30.0" text="+" />
+                        <Button mnemonicParsing="false" onMouseClicked="#onAddClick" prefWidth="30.0" text="+" />
                         <Button mnemonicParsing="false" prefWidth="30.0" text="-" />
                       </items>
                     </ToolBar>
-                    <TreeView prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                    <TreeView fx:id="resourceTree" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
                   </children>
                 </VBox>
               </children>
