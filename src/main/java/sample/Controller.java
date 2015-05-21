@@ -22,7 +22,7 @@ public class Controller {
     }
 
     private void loadResources(File file) {
-        System.out.println(file.getAbsolutePath());
+        System.out.println((file == null)? "null" : file.getAbsolutePath());
     }
 
 }
